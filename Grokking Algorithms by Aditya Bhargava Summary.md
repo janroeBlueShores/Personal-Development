@@ -29,14 +29,17 @@
 - With a list, elements are strewn all over, and one element stores the address of the next one.
 - All elements in the array should be the same type (all ints, all doubles, and so on).
 - Selection sort is a neat algorithm, but it’s not very fast (On<sup>2</sup>). Quicksort is a faster sorting algorithm that only takes O(n log n) time.
+
 ---
 
 # Chapter III
 ## Recursion
 
-- Recursion is when a function calls itself.
-- Every recursive function has two cases: the base case
-and the recursive case.
+- Recursion is when a function calls itself
+  - When writing a recursive function, you have to tell it when to stop recursing
+- Every recursive function has two parts: the base case, and the recursive case
+  - The recursive case is when the function calls itself
+  - The base case is when the function doesn’t call itself again doesn’t go into an infinite loop.
 - A stack has two operations: push and pop.
 - All function calls go onto the call stack.
 - The call stack can get very large, which takes up a lot of memory.
@@ -46,16 +49,21 @@ and the recursive case.
 # Chapter IV
 ## Quicksort
 
-- D&C works by breaking a problem down into smaller and smaller
-pieces. If you’re using D&C on a list, the base case is probably an
-empty array or an array with one element.
-- If you’re implementing quicksort, choose a random element as the
-pivot. The average runtime of quicksort is O(n log n)!
-- The constant in Big O notation can matter sometimes. That’s why
-quicksort is faster than merge sort.
-- The constant almost never matters for simple search versus binary
-search, because O(log n) is so much faster than O(n) when your list
-gets big.
+- Divide and Conquer (D&C)
+- D&C algorithms are recursive algorithms
+- To solve a problem using D&C, there are two steps:
+  1. Figure out the base case. This should be the simplest possible case.
+  2. Divide or decrease your problem until it becomes the base case.
+- D&C works by breaking a problem down into smaller and smaller pieces.
+- If you’re using D&C on a list, the base case is probably an empty array or an array with one element.
+- Quicksort is a sorting algorithm
+  - much faster than selection sort and is frequently used in real life
+  - one of the fastest sorting algorithms
+  - does not check to see whether the input array is already sorted
+  - when implementing quicksort, choose a random element as the pivot
+  - average runtime is O(n log n)
+- The constant in Big O notation can matter sometimes. That’s why quicksort is faster than merge sort.
+- The constant almost never matters for simple search versus binary search, because O(log n) is so much faster than O(n) when your list gets big.
 
 ---
 
