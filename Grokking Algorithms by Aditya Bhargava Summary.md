@@ -7,6 +7,7 @@
 - Algorithm times are measured in terms of growth of an algorithm.
 - Algorithm times are written in Big O notation.
 
+---
 
 # Chapter II
 ## Selection Sort
@@ -20,3 +21,54 @@ the address of the next one.
 - Linked lists allow fast inserts and deletes.
 - All elements in the array should be the same type (all ints,
 all doubles, and so on).
+
+---
+
+# Chapter III
+## Recursion
+
+- Recursion is when a function calls itself.
+- Every recursive function has two cases: the base case
+and the recursive case.
+- A stack has two operations: push and pop.
+- All function calls go onto the call stack.
+- The call stack can get very large, which takes up a lot of memory.
+
+---
+
+# Chapter IV
+## Quicksort
+
+- D&C works by breaking a problem down into smaller and smaller
+pieces. If you’re using D&C on a list, the base case is probably an
+empty array or an array with one element.
+- If you’re implementing quicksort, choose a random element as the
+pivot. The average runtime of quicksort is O(n log n)!
+- The constant in Big O notation can matter sometimes. That’s why
+quicksort is faster than merge sort.
+- The constant almost never matters for simple search versus binary
+search, because O(log n) is so much faster than O(n) when your list
+gets big.
+
+---
+
+# Chapter V
+## Hash Tables
+
+- Hash tables are already implemented in most common programming languages.
+- For built-in hash tables, assume average case performance: constant time.
+- Hash tables are a powerful data structure because they’re so fast and they let you model data in a different way.
+- You can make a hash table by combining a hash function with an array.
+- Collisions are bad. You need a hash function that minimizes collisions.
+- Hash tables have really fast search, insert, and delete.
+- Hash tables are good for modeling relationships from one item to another item.
+- Once your load factor is greater than .07, it’s time to resize your hash table.
+- Hash tables are used for caching data (for example, with a web server).
+- Hash tables are great for catching duplicates.
+
+---
+
+# Chapter VI
+## Breadth-First Search
+
+- 
