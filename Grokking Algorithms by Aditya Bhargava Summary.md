@@ -28,7 +28,7 @@
   - Almost every programming language you use will number array elements starting at 0
 - With a list, elements are strewn all over, and one element stores the address of the next one.
 - All elements in the array should be the same type (all ints, all doubles, and so on).
-- Selection sort is a neat algorithm, but it’s not very fast (On^2). Quicksort is a faster sorting algorithm that only takes O(n log n) time.
+- Selection sort is a neat algorithm, but it’s not very fast (On<sup>2</sup>). Quicksort is a faster sorting algorithm that only takes O(n log n) time.
 ---
 
 # Chapter III
