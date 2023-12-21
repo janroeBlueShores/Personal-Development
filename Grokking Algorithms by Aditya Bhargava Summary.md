@@ -71,4 +71,56 @@ gets big.
 # Chapter VI
 ## Breadth-First Search
 
-- 
+- Breadth-first search tells you if there’s a path from A to B.
+- If there’s a path, breadth-first search will find the shortest path.
+- If you have a problem like “find the shortest X,” try modeling your problem as a graph, and use breadth-first search to solve.
+- A directed graph has arrows, and the relationship follows the direction of the arrow (rama -> adit means “rama owes adit money”).
+- Undirected graphs don’t have arrows, and the relationship goes both ways (ross - rachel means “ross dated rachel and rachel dated ross”).
+- Queues are FIFO (First In, First Out).
+- Stacks are LIFO (Last In, First Out).
+- You need to check people in the order they were added to the search list, so the search list needs to be a queue. Otherwise, you won’t get the shortest path.
+- Once you check someone, make sure you don’t check them again. Otherwise, you might end up in an infinite loop.
+
+---
+
+# Chapter VII
+## Dijkstra's Algorithm
+
+- Breadth-first search is used to calculate the shortest path for an unweighted graph.
+- Dijkstra’s algorithm is used to calculate the shortest path for a weighted graph.
+- Dijkstra’s algorithm works when all the weights are positive.
+- If you have negative weights, use the Bellman-Ford algorithm.
+
+---
+
+# Chapter VIII
+## Greedy Algorithms
+
+- Greedy algorithms optimize locally, hoping to end up with a global optimum.
+- NP-complete problems have no known fast solution.
+- If you have an NP-complete problem, your best bet is to use an approximation algorithm.
+- Greedy algorithms are easy to write and fast to run, so they make good approximation algorithms.
+
+---
+
+# Chapter IX
+## Dynamic Programming
+
+- Dynamic programming is useful when you’re trying to optimize something given a constraint.
+- You can use dynamic programming when the problem can be broken into discrete subproblems.
+- Every dynamic-programming solution involves a grid.
+- The values in the cells are usually what you’re trying to optimize.
+- Each cell is a subproblem, so think about how you can divide your problem into subproblems.
+- There’s no single formula for calculating a dynamic-programming solution.
+  
+---
+
+# Chapter X
+## K-nearest
+
+- KNN is used for classification and regression and involves looking at the k-nearest neighbors.
+- Classification = categorization into a group.
+- Regression = predicting a response (like a number).
+- Feature extraction means converting an item (like a fruit or a user) into a list of numbers that can be compared.
+- Picking good features is an important part of a successful KNN algorithm.
+
