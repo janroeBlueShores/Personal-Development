@@ -6,7 +6,7 @@
 - Binary search is an algorithm where the input is a sorted list of elements
   - is a lot faster than simple search
   - only works when your list is in sorted order (e.g. names in a phone book are sorted in alphabetical order)
-- Big O notation is special notation that tells you how fast an algorithm is.
+- Big O notation is special notation that tells you how fast an algorithm is
 - Binary search has run time of O(log n)
   - O(log n) is faster than O(n)
   - Log time or O(log n) gets a lot faster once the list of items you’re searching through grows
@@ -19,16 +19,16 @@
 # Chapter II
 ## Selection Sort
 
-- Your computer’s memory is like a giant set of drawers.
-- When you want to store multiple elements, use an array or a list.
-- With an array, all your elements are stored right next to each other.
-- With a list, elements are strewn all over, and one element stores
-the address of the next one.
+- Your computer’s memory is like a giant set of drawers
+- When you want to store multiple elements, use an array or a list
 - Arrays allow fast reads.
 - Linked lists allow fast inserts and deletes.
-- All elements in the array should be the same type (all ints,
-all doubles, and so on).
-
+- With an array, all your elements are stored right next to each other
+  - The elements in an array are numbered and starts from 0
+  - Almost every programming language you use will number array elements starting at 0
+- With a list, elements are strewn all over, and one element stores the address of the next one.
+- All elements in the array should be the same type (all ints, all doubles, and so on).
+- Selection sort is a neat algorithm, but it’s not very fast (On^2). Quicksort is a faster sorting algorithm that only takes O(n log n) time.
 ---
 
 # Chapter III
