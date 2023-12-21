@@ -1,11 +1,18 @@
 # Chapter I
 ## Introduction to Algorithms
 
-- Binary search is a lot faster than simple search.
-- O(log n) is faster than O(n), but it gets a lot faster once the list of items you’re searching through grows.
-- Algorithm speed isn’t measured in seconds.
-- Algorithm times are measured in terms of growth of an algorithm.
-- Algorithm times are written in Big O notation.
+- An algorithm is a set of instructions for accomplishing a task
+  - Every piece of code could be called an algorithm
+- Binary search is an algorithm where the input is a sorted list of elements
+  - is a lot faster than simple search
+  - only works when your list is in sorted order (e.g. names in a phone book are sorted in alphabetical order)
+- Big O notation is special notation that tells you how fast an algorithm is.
+- Binary search has run time of O(log n)
+  - O(log n) is faster than O(n)
+  - Log time or O(log n) gets a lot faster once the list of items you’re searching through grows
+- Algorithm speed isn’t measured in seconds
+- Algorithm times are measured in terms of growth of an algorithm
+- Algorithm times are written in Big O notation
 
 ---
 
