@@ -69,12 +69,14 @@
 
 # Chapter V
 ## Hash Tables
-
+- A hash function is a function where you put in a string1 and you get back a number.
+  - The hash function knows how big your array is and only returns valid indexes
+  - A hash table is a combination of an array and a hash function
 - Hash tables are already implemented in most common programming languages.
 - For built-in hash tables, assume average case performance: constant time.
 - Hash tables are a powerful data structure because they’re so fast and they let you model data in a different way.
-- You can make a hash table by combining a hash function with an array.
 - Collisions are bad. You need a hash function that minimizes collisions.
+  - A good hash function will give you very few collisions
 - Hash tables have really fast search, insert, and delete.
 - Hash tables are good for modeling relationships from one item to another item.
 - Once your load factor is greater than .07, it’s time to resize your hash table.
@@ -86,11 +88,13 @@
 # Chapter VI
 ## Breadth-First Search
 
+- A graph models a set of connections.
+  - made up of nodes and edge
+  - A directed graph has arrows, and the relationship follows the direction of the arrow (rama -> adit means “rama owes adit money”).
+  - Undirected graphs don’t have arrows, and the relationship goes both ways (ross - rachel means “ross dated rachel and rachel dated ross”).
 - Breadth-first search tells you if there’s a path from A to B.
 - If there’s a path, breadth-first search will find the shortest path.
 - If you have a problem like “find the shortest X,” try modeling your problem as a graph, and use breadth-first search to solve.
-- A directed graph has arrows, and the relationship follows the direction of the arrow (rama -> adit means “rama owes adit money”).
-- Undirected graphs don’t have arrows, and the relationship goes both ways (ross - rachel means “ross dated rachel and rachel dated ross”).
 - Queues are FIFO (First In, First Out).
 - Stacks are LIFO (Last In, First Out).
 - You need to check people in the order they were added to the search list, so the search list needs to be a queue. Otherwise, you won’t get the shortest path.
@@ -101,6 +105,9 @@
 # Chapter VII
 ## Dijkstra's Algorithm
 
+- When working with Dijkstra’s algorithm, each edge in the graph has a number associated with it. These are called weights.
+  - A graph with weights is called a weighted graph
+  - A graph without weights is called an unweighted graph
 - Breadth-first search is used to calculate the shortest path for an unweighted graph.
 - Dijkstra’s algorithm is used to calculate the shortest path for a weighted graph.
 - Dijkstra’s algorithm works when all the weights are positive.
